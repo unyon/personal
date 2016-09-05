@@ -111,9 +111,14 @@ position: relative;
   height: auto;  
   min-height: 100%;
   text-align: center;
+  background: white;
 }
 .intro h1 {
   color: #189DC9;
+}
+
+.intro a {
+  size: small;
 }
 
 .main {
