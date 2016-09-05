@@ -9,20 +9,16 @@
 <body> 
 	<div class="outer-wrapper"> 
 		<div class="wrapper">  
-	<!-- 	<header>  -->
-			<!-- <h1 class="site-title">Hello</h1>  -->
-				<i class="fa fa-bars nav-toggle"></i>
-				<nav class="main-nav">
-				  <ul>
-					 	<li><%= link_to 'Home', root_path %>&nbsp;&nbsp;</li>
-						<li><%= link_to 'About', about_path %>&nbsp;&nbsp;</li>
-						<li><%= link_to 'Contact', 'mailto:michalloran@gmail.com' %>&nbsp;&nbsp;</li>
-						<li><%= link_to 'Resume', 'mthresume.pdf' %>&nbsp;&nbsp;</li>
-						<li class="nav-toggle">Close</li>
-				  </ul>
-				</nav>	<!-- close main-nav-->
-	<!-- 		</header> --> 	<!-- close header-->
-			<!-- <div class="clr"></div> -->
+			<i class="fa fa-bars fa-2x nav-toggle"></i>
+			<nav class="main-nav">
+			  <ul>
+				 	<li><%= link_to 'Home', root_path %>&nbsp;&nbsp;</li>
+					<li><%= link_to 'About', about_path %>&nbsp;&nbsp;</li>
+					<li><%= link_to 'Contact', 'mailto:michalloran@gmail.com' %>&nbsp;&nbsp;</li>
+					<li><%= link_to 'Resume', 'mthresume.pdf' %>&nbsp;&nbsp;</li>
+					<li class="nav-toggle">Close</li>
+			  </ul>
+			</nav>	<!-- close main-nav-->
 			<%= yield %>
  		</div> <!-- close wrapper-->
 	</div> <!-- close outer wrapper-->
@@ -37,5 +33,4 @@ $(function() {
 		$('.wrapper').toggleClass('open');
 	});
 });
-
 </script>
