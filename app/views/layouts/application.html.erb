@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michael Halloran</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body> 
+	<div class="outer-wrapper"> 
+		<div class="wrapper">  
+	<!-- 	<header>  -->
+			<!-- <h1 class="site-title">Hello</h1>  -->
+				<i class="fa fa-bars nav-toggle"></i>
+				<nav class="main-nav">
+				  <ul>
+					 	<li><%= link_to 'Home', root_path %>&nbsp;&nbsp;</li>
+						<li><%= link_to 'About', about_path %>&nbsp;&nbsp;</li>
+						<li><%= link_to 'Contact', 'mailto:michalloran@gmail.com' %>&nbsp;&nbsp;</li>
+						<li><%= link_to 'Resume', 'mthresume.pdf' %>&nbsp;&nbsp;</li>
+						<li class="nav-toggle">Close</li>
+				  </ul>
+				</nav>	<!-- close main-nav-->
+	<!-- 		</header> --> 	<!-- close header-->
+			<!-- <div class="clr"></div> -->
+			<%= yield %>
+ 		</div> <!-- close wrapper-->
+	</div> <!-- close outer wrapper-->
+</body>	 		<!-- close body-->
+</html>
+
+
+<script>
+$(function() {
+	$('.nav-toggle').on('click', function() {
+		$('.nav-toggle').hide;
+		$('.wrapper').toggleClass('open');
+	});
+});
+
+</script>
