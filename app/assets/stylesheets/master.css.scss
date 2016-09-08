@@ -8,7 +8,7 @@ body, html {
 
 .outer-wrapper {
   overflow: hidden;
-  height:     auto;        /*These two lines were the key. */
+  height:     auto;     
   min-height: 100%;
   margin:  0px auto;
   padding: 0px auto;
@@ -50,10 +50,6 @@ body, html {
   cursor: pointer;
 }
 
-.site-title {
-  margin-left: 100px;
-}
-
 .main-nav {
   position: absolute;
   top: 0;
@@ -68,20 +64,6 @@ body, html {
   height: 100%;
   font-size: 2em;
 }
-
-/*.clr{
-  clear:both;
-}*/
-
-/*.main-nav .nav-toggle {
-/*  right: 1%;
-top: 25%;
-text-align: center; 
-display: block;
-color: white;
-padding: 10px 20px;
-position: relative;
-}*/
 
 .main-nav ul a {
 	padding: 10px 20px;
@@ -104,28 +86,25 @@ position: relative;
 
 .intro {
   box-shadow: 0px 3px 8px #2a2a2a;
-  padding: 10px 120px 40px 120px;
-  margin: 65px 180px 20px 180px;
+  padding: 10px 120px 10px 120px;
+  margin: 65px 180px 390px 180px;
   height: auto;  
   min-height: 100%;
   text-align: center;
   background: white;
   position: relative;
+  overflow: hidden;
 }
+
 .intro h1 {
   color: #189DC9;
 }
 
-.intro a {
-  font-size: 100%;
-}
-
 .intro p {
-  font-size: 150%;
+  font-size: 125%;
 }
 
 .main {
-/*  background-image: image-url('trees6.jpg');*/
   height: auto;  
   min-height: 100%;
   width: auto;
